@@ -1,40 +1,52 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_rev_int_tab.c                                   :+:      :+:    :+:   */
+/*   ft_sort_int_tab.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cllaurad <cllaurad@student.42belgium.be    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/02/07 21:59:46 by cllaurad          #+#    #+#             */
-/*   Updated: 2026/02/07 22:57:45 by cllaurad         ###   ########.fr       */
+/*   Created: 2026/02/08 10:34:45 by cllaurad          #+#    #+#             */
+/*   Updated: 2026/02/08 10:39:02 by cllaurad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 #include <stdio.h>
 
-void    ft_rev_int_tab(int *tab, int size)
+void    ft_sort_int_tab(int *tab, int size)
 {
     int i;
+    int y;
+    int lowest;
     int temp;
 
-    i = 0;
-    while (i < (size / 2))
+    y = 0;
+    while (y < size - 1)
     {
-        temp = *(tab + i);
-        *(tab + i) = *(tab + (size - 1 - i));
-        *(tab + (size - 1 - i)) = temp;
-        i++;
+        lowest = y;
+        i = y + 1;
+        while (i < size)
+        {
+            if (*(tab + lowest) > *(tab + i))
+                lowest = i;
+            i++;
+        }
+
+        temp = *(tab + y);
+        *(tab + y) = *(tab + lowest);
+        *(tab + lowest) = temp;
+
+        y++;
     }
-    
+
 }
 
-int main(void)
-{   
-    int arr[] = {1, 2, 3, 4, 5};
-    int size = 5;
+int main (void)
+{
+    int arr[] = {6, 5, 4, 3, 2, 1};
+    int size = 6;
 
-    ft_rev_int_tab(arr, size);
+    ft_sort_int_tab(arr, size);
 
     for (int i = 0; i < size; i++)
     {
@@ -42,5 +54,4 @@ int main(void)
     }
     printf("\n");
 
-    return 0;
 }
