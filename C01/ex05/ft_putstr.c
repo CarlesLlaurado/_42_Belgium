@@ -1,41 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_ultimate_ft.c                                   :+:      :+:    :+:   */
+/*   ft_putstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cllaurad <cllaurad@student.42belgium.be    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/02/08 09:45:53 by cllaurad          #+#    #+#             */
-/*   Updated: 2026/02/08 10:05:51 by cllaurad         ###   ########.fr       */
+/*   Created: 2026/02/08 10:20:41 by cllaurad          #+#    #+#             */
+/*   Updated: 2026/02/08 10:24:31 by cllaurad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 #include <stdio.h>
 
-void ft_ultimate_ft(int *********nbr)
+void ft_putstr(char *str)
 {
-    *********nbr = 42;
+    int i;
+
+    i = 0;
+    while (str[i] != '\0')
+    {
+        write(STDOUT_FILENO, &str[i], 1);
+        i++;
+    }
+    write(STDOUT_FILENO, "\n", 1);
 }
 
 int main(void)
 {
-    int n;
+    char string[] = "Hola, me llamo Carles";
 
-    n = 10;
-    int *p1 = &n;
-    int **p2 = &p1;
-    int ***p3 = &p2;
-    int ****p4 = &p3;
-    int *****p5 = &p4;
-    int ******p6 = &p5;
-    int *******p7 = &p6;
-    int ********p8 = &p7;
-    int *********ptr = &p8;
-
-    printf("%i\n", *********ptr);
-    ft_ultimate_ft(ptr);
-    printf("%i\n", *********ptr);
-
+    ft_putstr(string);
 }
-

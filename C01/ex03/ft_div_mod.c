@@ -1,41 +1,38 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_ultimate_ft.c                                   :+:      :+:    :+:   */
+/*   ft_div_mod.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cllaurad <cllaurad@student.42belgium.be    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/02/08 09:45:53 by cllaurad          #+#    #+#             */
-/*   Updated: 2026/02/08 10:05:51 by cllaurad         ###   ########.fr       */
+/*   Created: 2026/02/08 10:11:28 by cllaurad          #+#    #+#             */
+/*   Updated: 2026/02/08 10:15:26 by cllaurad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 #include <stdio.h>
 
-void ft_ultimate_ft(int *********nbr)
+void ft_div_mod(int a, int b, int *div, int *mod)
 {
-    *********nbr = 42;
+    *div = a / b;
+
+    *mod = a % b;
 }
 
-int main(void)
+int main (void)
 {
-    int n;
+    int a = 10;
+    int b = 6;
 
-    n = 10;
-    int *p1 = &n;
-    int **p2 = &p1;
-    int ***p3 = &p2;
-    int ****p4 = &p3;
-    int *****p5 = &p4;
-    int ******p6 = &p5;
-    int *******p7 = &p6;
-    int ********p8 = &p7;
-    int *********ptr = &p8;
+    int d = 0;
+    int m = 0;
 
-    printf("%i\n", *********ptr);
-    ft_ultimate_ft(ptr);
-    printf("%i\n", *********ptr);
+    int *div = &d;
+    int *mod = &m;
+
+    printf("a is %i, b is %i and div is %i, and mod is %i\n", a, b, *div, *mod);
+    ft_div_mod(a, b, div, mod);
+    printf("a is %i, b is %i and div is %i, and mod is %i\n", a, b, *div, *mod);
 
 }
-

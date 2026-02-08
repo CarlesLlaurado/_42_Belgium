@@ -1,41 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_ultimate_ft.c                                   :+:      :+:    :+:   */
+/*   ft_ultimate_div_mod.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cllaurad <cllaurad@student.42belgium.be    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/02/08 09:45:53 by cllaurad          #+#    #+#             */
-/*   Updated: 2026/02/08 10:05:51 by cllaurad         ###   ########.fr       */
+/*   Created: 2026/02/08 10:16:09 by cllaurad          #+#    #+#             */
+/*   Updated: 2026/02/08 10:20:05 by cllaurad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 #include <stdio.h>
 
-void ft_ultimate_ft(int *********nbr)
+void ft_ultimate_div_mod(int *a, int *b)
 {
-    *********nbr = 42;
+    int temp1;
+    int temp2;
+
+    temp1 = *a / *b;
+    *b = *a % *b;
+    *a = temp1;
+
 }
 
 int main(void)
 {
-    int n;
+    int a = 10;
+    int b = 6;
 
-    n = 10;
-    int *p1 = &n;
-    int **p2 = &p1;
-    int ***p3 = &p2;
-    int ****p4 = &p3;
-    int *****p5 = &p4;
-    int ******p6 = &p5;
-    int *******p7 = &p6;
-    int ********p8 = &p7;
-    int *********ptr = &p8;
+    int *ptra = &a;
+    int *ptrb = &b;
 
-    printf("%i\n", *********ptr);
-    ft_ultimate_ft(ptr);
-    printf("%i\n", *********ptr);
+    printf("ptra: %i and ptrb: %i\n", *ptra, *ptrb);
+    ft_ultimate_div_mod(ptra, ptrb);
+    printf("ptra: %i and ptrb: %i\n", *ptra, *ptrb);
 
 }
-

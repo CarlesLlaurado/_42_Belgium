@@ -1,41 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_ultimate_ft.c                                   :+:      :+:    :+:   */
+/*   ft_swap.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cllaurad <cllaurad@student.42belgium.be    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/02/08 09:45:53 by cllaurad          #+#    #+#             */
-/*   Updated: 2026/02/08 10:05:51 by cllaurad         ###   ########.fr       */
+/*   Created: 2026/02/08 10:06:41 by cllaurad          #+#    #+#             */
+/*   Updated: 2026/02/08 10:10:42 by cllaurad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 #include <stdio.h>
 
-void ft_ultimate_ft(int *********nbr)
+void    ft_swap(int *a, int *b)
 {
-    *********nbr = 42;
+    int temp;
+
+    temp = *a;
+    *a = *b;
+    *b = temp;
 }
 
-int main(void)
+int main (void)
 {
-    int n;
+    int a = 10;
+    int b = 20;
+    
+    int *ptra = &a;
+    int *ptrb = &b;
 
-    n = 10;
-    int *p1 = &n;
-    int **p2 = &p1;
-    int ***p3 = &p2;
-    int ****p4 = &p3;
-    int *****p5 = &p4;
-    int ******p6 = &p5;
-    int *******p7 = &p6;
-    int ********p8 = &p7;
-    int *********ptr = &p8;
-
-    printf("%i\n", *********ptr);
-    ft_ultimate_ft(ptr);
-    printf("%i\n", *********ptr);
+    printf("a: %i and b: %i\n", a, b);
+    ft_swap(ptra, ptrb);
+    printf("a: %i and b: %i\n", a, b);
 
 }
-
