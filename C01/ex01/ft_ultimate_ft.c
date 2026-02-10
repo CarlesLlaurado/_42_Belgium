@@ -6,18 +6,18 @@
 /*   By: cllaurad <cllaurad@student.42belgium.be    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/08 09:45:53 by cllaurad          #+#    #+#             */
-/*   Updated: 2026/02/08 10:05:51 by cllaurad         ###   ########.fr       */
+/*   Updated: 2026/02/10 21:12:14 by cllaurad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
+/*
 #include <unistd.h>
 #include <stdio.h>
-
-void ft_ultimate_ft(int *********nbr)
+*/
+void	ft_ultimate_ft(int *********nbr)
 {
-    *********nbr = 42;
+	*********nbr = 42;
 }
-
+/*
 int main(void)
 {
     int n;
@@ -38,4 +38,4 @@ int main(void)
     printf("%i\n", *********ptr);
 
 }
-
+*/

@@ -6,24 +6,22 @@
 /*   By: cllaurad <cllaurad@student.42belgium.be    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/08 10:16:09 by cllaurad          #+#    #+#             */
-/*   Updated: 2026/02/08 10:20:05 by cllaurad         ###   ########.fr       */
+/*   Updated: 2026/02/10 21:34:22 by cllaurad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
+/*
 #include <unistd.h>
 #include <stdio.h>
-
-void ft_ultimate_div_mod(int *a, int *b)
+*/
+void	ft_ultimate_div_mod(int *a, int *b)
 {
-    int temp1;
-    int temp2;
+	int	temp1;
 
-    temp1 = *a / *b;
-    *b = *a % *b;
-    *a = temp1;
-
+	temp1 = *a % *b;
+	*a /= *b;
+	*b = temp1;
 }
-
+/*
 int main(void)
 {
     int a = 10;
@@ -37,3 +35,4 @@ int main(void)
     printf("ptra: %i and ptrb: %i\n", *ptra, *ptrb);
 
 }
+*/

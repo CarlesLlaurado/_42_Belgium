@@ -6,22 +6,22 @@
 /*   By: cllaurad <cllaurad@student.42belgium.be    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/08 10:06:41 by cllaurad          #+#    #+#             */
-/*   Updated: 2026/02/08 10:10:42 by cllaurad         ###   ########.fr       */
+/*   Updated: 2026/02/10 21:13:37 by cllaurad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
+/*
 #include <unistd.h>
 #include <stdio.h>
-
-void    ft_swap(int *a, int *b)
+*/
+void	ft_swap(int *a, int *b)
 {
-    int temp;
+	int	temp;
 
-    temp = *a;
-    *a = *b;
-    *b = temp;
+	temp = *a;
+	*a = *b;
+	*b = temp;
 }
-
+/*
 int main (void)
 {
     int a = 10;
@@ -35,3 +35,4 @@ int main (void)
     printf("a: %i and b: %i\n", a, b);
 
 }
+*/
