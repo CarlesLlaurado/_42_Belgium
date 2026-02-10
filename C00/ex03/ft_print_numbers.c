@@ -6,7 +6,7 @@
 /*   By: Carles Llauradó <marvin@42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/06 10:57:30 by Carles Llaura     #+#    #+#             */
-/*   Updated: 2026/02/06 11:07:35 by Carles Llaura    ###   ########.fr       */
+/*   Updated: 2026/02/10 22:10:10 by cllaurad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,8 +23,9 @@ void	ft_print_numbers(void)
 		n++;
 	}
 }
-
+/*
 int	main(void)
 {
 	ft_print_numbers();
 }
+*/

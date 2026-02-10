@@ -6,7 +6,7 @@
 /*   By: cllaurad <cllaurad@student.42belgium.be>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/06 11:59:47 by cllaurad          #+#    #+#             */
-/*   Updated: 2026/02/06 12:58:50 by cllaurad         ###   ########.fr       */
+/*   Updated: 2026/02/10 22:19:31 by cllaurad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,8 +43,9 @@ void	ft_print_comb2(void)
 		a++;
 	}
 }
-
+/*
 int	main(void)
 {
 	ft_print_comb2();
 }
+*/

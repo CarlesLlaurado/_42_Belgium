@@ -6,7 +6,7 @@
 /*   By: Carles Llauradó <marvin@42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/06 11:09:04 by Carles Llaura     #+#    #+#             */
-/*   Updated: 2026/02/06 11:15:06 by Carles Llaura    ###   ########.fr       */
+/*   Updated: 2026/02/10 22:10:48 by cllaurad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ void	ft_is_negative(int n)
 		write(1, "N", 1);
 	}
 }
-
+/*
 int	main(void)
 {
 	int	n;
@@ -31,3 +31,4 @@ int	main(void)
 	n = -5;
 	ft_is_negative(n);
 }
+*/

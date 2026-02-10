@@ -6,7 +6,7 @@
 /*   By: Carles Llauradó <marvin@42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/05 22:43:06 by Carles Llaura     #+#    #+#             */
-/*   Updated: 2026/02/07 21:50:37 by cllaurad         ###   ########.fr       */
+/*   Updated: 2026/02/10 22:04:48 by cllaurad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	ft_putchar(char c)
 {
 	write(1, &c, 1);
 }
-
+/*
 int	main(void)
 {
 	char	c;
@@ -24,3 +24,4 @@ int	main(void)
 	c = 'a';
 	ft_putchar(c);
 }
+*/

@@ -6,7 +6,7 @@
 /*   By: Carles Llauradó <marvin@42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/06 11:16:15 by Carles Llaura     #+#    #+#             */
-/*   Updated: 2026/02/06 11:47:22 by Carles Llaura    ###   ########.fr       */
+/*   Updated: 2026/02/10 22:14:53 by cllaurad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ void	ft_print_comb(void)
 				write(1, &b, 1);
 				write(1, &c, 1);
 				if (!(a == '7' && b == '8' && c == '9'))
-					write(1, " ,", 2);
+					write(1, ", ", 2);
 				c++;
 			}
 			b++;
@@ -39,8 +39,9 @@ void	ft_print_comb(void)
 		a++;
 	}
 }
-
+/*
 int	main(void)
 {
 	ft_print_comb();
 }
+*/
