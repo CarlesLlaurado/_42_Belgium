@@ -1,37 +1,38 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnbr.c                                        :+:      :+:    :+:   */
+/*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cllaurad <cllaurad@student.42belgium.be    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/02/08 10:43:08 by cllaurad          #+#    #+#             */
-/*   Updated: 2026/02/09 09:48:58 by cllaurad         ###   ########.fr       */
+/*   Created: 2026/02/09 08:54:19 by cllaurad          #+#    #+#             */
+/*   Updated: 2026/02/09 09:02:45 by cllaurad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include <stdio.h>
 
-void	ft_putnbr(int nb)
+int ft_strncmp(char *s1, char *s2, unsigned int n)
 {
-	char	c;
+    int i;
 
-	if (nb < 0)
-	{
-		write(1, "-", 1);
-		nb = -nb;
-	}
-	if (nb >= 10)
-	{
-		ft_putnbr(nb / 10);
-	}
-	c = (nb % 10) + '0';
-	write(1, &c, 1);
+    i = 0;
+    while (s1[i] != '\0' && i < n)
+    {
+        if (s1[i] != s2[i])
+            return (s1[i] - s2[i]);
+        i++;
+    }
+    return (0);
 }
 
-int	main(void)
+int main (void)
 {
-	ft_putnbr(42);
-	write(1, "\n", 1);
-	return (0);
+    char s1[] = "Me llamo Carles";
+    char s2[] = "Me llamo Zarles";
+    int n = 4;
+
+    int j = ft_strncmp(s1, s2, n);
+
+    printf("%i\n", j);
 }

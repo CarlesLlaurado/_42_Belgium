@@ -1,37 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnbr.c                                        :+:      :+:    :+:   */
+/*   ft_str_is_lowercase.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cllaurad <cllaurad@student.42belgium.be    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/02/08 10:43:08 by cllaurad          #+#    #+#             */
-/*   Updated: 2026/02/09 09:48:58 by cllaurad         ###   ########.fr       */
+/*   Created: 2026/02/08 15:02:23 by cllaurad          #+#    #+#             */
+/*   Updated: 2026/02/08 15:32:18 by cllaurad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include <stdio.h>
 
-void	ft_putnbr(int nb)
+int ft_str_is_lowercase(char *str)
 {
-	char	c;
+    int i;
 
-	if (nb < 0)
-	{
-		write(1, "-", 1);
-		nb = -nb;
-	}
-	if (nb >= 10)
-	{
-		ft_putnbr(nb / 10);
-	}
-	c = (nb % 10) + '0';
-	write(1, &c, 1);
+    i = 0;
+    while (str[i] != '\0')
+    {
+        if (!((str[i] >= 'a' && str[i] <= 'z')))
+        {
+            return (0);
+        }
+        i++;
+    }
+    return (1);
 }
 
-int	main(void)
+int main(void)
 {
-	ft_putnbr(42);
-	write(1, "\n", 1);
-	return (0);
+    int temp;
+
+    char str[] = "carlesllaurado";
+    
+    temp = ft_str_is_lowercase(str);
+
+    printf("return is: %i\n", temp);
 }

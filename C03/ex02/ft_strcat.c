@@ -1,37 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnbr.c                                        :+:      :+:    :+:   */
+/*   ft_strcat.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cllaurad <cllaurad@student.42belgium.be    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/02/08 10:43:08 by cllaurad          #+#    #+#             */
-/*   Updated: 2026/02/09 09:48:58 by cllaurad         ###   ########.fr       */
+/*   Created: 2026/02/09 09:03:15 by cllaurad          #+#    #+#             */
+/*   Updated: 2026/02/09 09:03:15 by cllaurad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include <stdio.h>
 
-void	ft_putnbr(int nb)
+char *ft_strcat(char *dest, char *src)
 {
-	char	c;
-
-	if (nb < 0)
-	{
-		write(1, "-", 1);
-		nb = -nb;
-	}
-	if (nb >= 10)
-	{
-		ft_putnbr(nb / 10);
-	}
-	c = (nb % 10) + '0';
-	write(1, &c, 1);
-}
-
-int	main(void)
-{
-	ft_putnbr(42);
-	write(1, "\n", 1);
-	return (0);
+    
 }

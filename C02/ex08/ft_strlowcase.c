@@ -1,37 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnbr.c                                        :+:      :+:    :+:   */
+/*   ft_strlowcase.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cllaurad <cllaurad@student.42belgium.be    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/02/08 10:43:08 by cllaurad          #+#    #+#             */
-/*   Updated: 2026/02/09 09:48:58 by cllaurad         ###   ########.fr       */
+/*   Created: 2026/02/08 15:36:53 by cllaurad          #+#    #+#             */
+/*   Updated: 2026/02/08 15:42:32 by cllaurad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include <stdio.h>
 
-void	ft_putnbr(int nb)
+char *ft_strlowcase(char *str)
 {
-	char	c;
+    int i;
 
-	if (nb < 0)
-	{
-		write(1, "-", 1);
-		nb = -nb;
-	}
-	if (nb >= 10)
-	{
-		ft_putnbr(nb / 10);
-	}
-	c = (nb % 10) + '0';
-	write(1, &c, 1);
+    i = 0;
+    while (str[i] != '\0')
+    {
+        if (str[i] >= 'A' && str[i] <= 'Z')
+            str[i] += 32;
+      i++;
+    }
+    return str;
 }
 
-int	main(void)
+int main(void)
 {
-	ft_putnbr(42);
-	write(1, "\n", 1);
-	return (0);
+    char str[] = "Hola me llamo Carles";
+
+    printf("%s\n", str);
+    ft_strlowcase(str);
+    printf("%s\n", str);
 }

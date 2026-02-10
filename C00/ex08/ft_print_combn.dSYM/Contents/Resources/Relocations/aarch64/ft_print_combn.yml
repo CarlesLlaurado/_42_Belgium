@@ -1,0 +1,5 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/carlesllaurado/_42_Belgium/C00/ex08/ft_print_combn'
+relocations:     []
+...
