@@ -6,34 +6,33 @@
 /*   By: cllaurad <cllaurad@student.42belgium.be    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/08 13:23:35 by cllaurad          #+#    #+#             */
-/*   Updated: 2026/02/08 14:43:31 by cllaurad         ###   ########.fr       */
+/*   Updated: 2026/02/11 13:29:19 by cllaurad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
+/*
 #include <unistd.h>
 #include <stdio.h>
 
 int ft_length(char *src);
-
-char *ft_strncpy(char *dest, char *src, unsigned int n)
+*/
+char	*ft_strncpy(char *dest, char *src, unsigned int n)
 {
-    int i;
+	int	i;
 
-    i = 0;
-    while (i < n && src[i] != '\0')
-    {
-        dest[i] = src[i];
-        i++;
-    }
-
-    while (i < n)
-    {
-        dest[i] = '\0';
-        i++;
-    }
-    return (dest);
+	i = 0;
+	while (i < n && src[i] != '\0')
+	{
+		dest[i] = src[i];
+		i++;
+	}
+	while (i < n)
+	{
+		dest[i] = '\0';
+		i++;
+	}
+	return (dest);
 }
-
+/*
 int main(void)
 {
     char palabra[] = "Hola, me llamo Carles";
@@ -62,3 +61,4 @@ int main(void)
     }
     write(1, "\n", 1);
 }
+*/

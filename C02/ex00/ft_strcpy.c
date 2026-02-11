@@ -6,27 +6,27 @@
 /*   By: cllaurad <cllaurad@student.42belgium.be    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/08 12:51:21 by cllaurad          #+#    #+#             */
-/*   Updated: 2026/02/08 13:05:15 by cllaurad         ###   ########.fr       */
+/*   Updated: 2026/02/11 13:26:38 by cllaurad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
+/*
 #include <unistd.h>
 #include <stdio.h>
-
-char *ft_strcpy(char *dest, char *src)
+*/
+char	*ft_strcpy(char *dest, char *src)
 {
-    int i;
+	int	i;
 
-    i = 0;
-    while (src[i] != '\0')
-    {
-        dest[i] = src[i];
-        i++;
-    }
-    dest[i] = '\0';
-    return (dest);
+	i = 0;
+	while (src[i] != '\0')
+	{
+		dest[i] = src[i];
+		i++;
+	}
+	dest[i] = '\0';
+	return (dest);
 }
-
+/*
 int ft_length(char *src)
 {
     int i;
@@ -54,3 +54,4 @@ int main(void)
     printf("Esto es copy: %s\n", copy);
 
 }
+*/
