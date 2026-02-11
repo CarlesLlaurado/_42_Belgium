@@ -6,7 +6,7 @@
 /*   By: cllaurad <cllaurad@student.42belgium.be    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/08 10:43:08 by cllaurad          #+#    #+#             */
-/*   Updated: 2026/02/10 22:28:35 by cllaurad         ###   ########.fr       */
+/*   Updated: 2026/02/11 10:49:53 by cllaurad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_putnbr(int nb)
 {
-	char	c;
+	char			c;
 	unsigned int	n;
 
 	n = nb;
