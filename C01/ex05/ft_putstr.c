@@ -6,7 +6,7 @@
 /*   By: cllaurad <cllaurad@student.42belgium.be    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/08 10:20:41 by cllaurad          #+#    #+#             */
-/*   Updated: 2026/02/10 21:36:59 by cllaurad         ###   ########.fr       */
+/*   Updated: 2026/02/11 15:34:34 by cllaurad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 /*
@@ -23,7 +23,6 @@ void	ft_putstr(char *str)
 		write(STDOUT_FILENO, &str[i], 1);
 		i++;
 	}
-	write(STDOUT_FILENO, "\n", 1);
 }
 /*
 int main(void)

@@ -6,13 +6,13 @@
 /*   By: cllaurad <cllaurad@student.42belgium.be>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/06 11:59:47 by cllaurad          #+#    #+#             */
-/*   Updated: 2026/02/10 22:19:31 by cllaurad         ###   ########.fr       */
+/*   Updated: 2026/02/11 15:40:25 by cllaurad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void	ft_print_number(int n)
+static void	ft_print_number(int n)
 {
 	char	c;
 

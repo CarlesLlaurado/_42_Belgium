@@ -6,7 +6,7 @@
 /*   By: cllaurad <cllaurad@student.42belgium.be    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/08 09:39:41 by cllaurad          #+#    #+#             */
-/*   Updated: 2026/02/10 21:10:01 by cllaurad         ###   ########.fr       */
+/*   Updated: 2026/02/11 15:33:07 by cllaurad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 /*
@@ -24,7 +24,7 @@ int main(void)
     int *ptr;
 
     n = 10;
-    *ptr = n;
+    *ptr = &n;
     printf("%i\n", *ptr);
     ft_ft(ptr);
     printf("%i\n", *ptr);
