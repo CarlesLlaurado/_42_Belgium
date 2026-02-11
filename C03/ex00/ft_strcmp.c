@@ -6,26 +6,27 @@
 /*   By: cllaurad <cllaurad@student.42belgium.be    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/08 20:01:50 by cllaurad          #+#    #+#             */
-/*   Updated: 2026/02/09 08:52:09 by cllaurad         ###   ########.fr       */
+/*   Updated: 2026/02/11 16:07:29 by cllaurad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
+/*
 #include <stdio.h>
-
-int ft_strcmp(char *s1, char *s2)
+*/
+int	ft_strcmp(char *s1, char *s2)
 {
-    int i;
+	int	i;
 
-    i = 0;
-    while (s1[i] != '\0')
-    {
-        if (s1[i] != s2[i])
-            return (s1[i] - s2[i]);
-        i++;
-    }
-    return (0);
+	i = 0;
+	while (s1[i] == s2[i] && s1[i] != '\0')
+	{
+		i++;
+	}
+	if (s1[i] == s2[i])
+		return (0);
+	else
+		return ((unsigned char)s1[i] - (unsigned char)s2[i]);
 }
-
+/*
 int main (void)
 {
     char s1[] = "Me llamo Carles";
@@ -35,3 +36,4 @@ int main (void)
 
     printf("%i\n", j);
 }
+*/
