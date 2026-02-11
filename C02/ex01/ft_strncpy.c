@@ -1,14 +1,15 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncopy.c                                      :+:      :+:    :+:   */
+/*   ft_strncpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: cllaurad <cllaurad@student.42belgium.be    +#+  +:+       +#+        */
+/*   By: cllaurad <cllaurad@student.42belgium.be>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/02/08 13:23:35 by cllaurad          #+#    #+#             */
-/*   Updated: 2026/02/11 13:29:19 by cllaurad         ###   ########.fr       */
+/*   Created: 2026/02/11 15:29:33 by cllaurad          #+#    #+#             */
+/*   Updated: 2026/02/11 15:29:36 by cllaurad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 /*
 #include <unistd.h>
 #include <stdio.h>
@@ -17,7 +18,7 @@ int ft_length(char *src);
 */
 char	*ft_strncpy(char *dest, char *src, unsigned int n)
 {
-	int	i;
+	unsigned int	i;
 
 	i = 0;
 	while (i < n && src[i] != '\0')
