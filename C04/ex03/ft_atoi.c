@@ -6,7 +6,7 @@
 /*   By: cllaurad <cllaurad@student.42belgium.be>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/12 11:59:41 by cllaurad          #+#    #+#             */
-/*   Updated: 2026/02/12 12:40:57 by cllaurad         ###   ########.fr       */
+/*   Updated: 2026/02/16 16:22:54 by cllaurad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ int	ft_atoi(char *str)
 	sign = 1;
 	result = 0;
 	i = 0;
-	while (str[i] == ' ' || str[i] >= 9 && str[i] <= 13)
+	while (str[i] == ' ' || (str[i] >= 9 && str[i] <= 13))
 		i++;
 	while (str[i] == '+' || str[i] == '-')
 	{
