@@ -6,7 +6,7 @@
 /*   By: cllaurad <cllaurad@student.42belgium.be>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/17 10:31:16 by cllaurad          #+#    #+#             */
-/*   Updated: 2026/02/17 10:42:59 by cllaurad         ###   ########.fr       */
+/*   Updated: 2026/02/17 12:08:06 by cllaurad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ int	ft_sqrt(int nb)
 	n = 1;
 	if (nb <= 0)
 		return (0);
-	while (n * n <= nb && n < 46341)
+	while (n < 46341 && n * n <= nb)
 	{
 		if (n * n == nb)
 			return (n);
