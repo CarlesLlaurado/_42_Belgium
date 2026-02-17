@@ -6,7 +6,7 @@
 /*   By: cllaurad <cllaurad@student.42belgium.be>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/17 13:42:42 by cllaurad          #+#    #+#             */
-/*   Updated: 2026/02/17 13:46:52 by cllaurad         ###   ########.fr       */
+/*   Updated: 2026/02/17 14:45:07 by cllaurad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ int	main(int argc, char *argv[])
 	int	i;
 
 	if (argc < 1)
-		return (1);
+		return (0);
 	i = argc - 1;
 	while (i > 0)
 	{
