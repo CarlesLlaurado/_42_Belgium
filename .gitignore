@@ -1,0 +1,17 @@
+# Ejecutables
+a.out
+*.out
+
+# Objetos y librerías
+*.o
+*.a
+
+# Basura del Sistema Operativo
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Archivos temporales de editores
+*.swp
+*.swo
+.vscode/
