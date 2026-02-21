@@ -1,24 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   is_power_of_2.c                                    :+:      :+:    :+:   */
+/*   ft.h                                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: cllaurad <cllaurad@student.42belgium.be    +#+  +:+       +#+        */
+/*   By: cllaurad <cllaurad@student.42belgium.be>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/02/20 12:03:26 by cllaurad          #+#    #+#             */
-/*   Updated: 2026/02/20 12:09:07 by cllaurad         ###   ########.fr       */
+/*   Created: 2026/02/21 17:40:34 by cllaurad          #+#    #+#             */
+/*   Updated: 2026/02/21 17:57:59 by cllaurad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int is_power_of_2(unsigned int n)
-{
-    if (n == 0)
-        return (0);
-    while (n > 1)
-    {
-        if (n % 2 != 0)
-            return (0);
-        n = n / 2;
-    }
-    return (1);
-}
+#ifndef FT_H
+
+# define FT_H
+
+void	ft_putchar(char c);
+void	ft_swap(int *a, int *b);
+void	ft_putstr(char *str);
+int		ft_strlen(char *str);
+int		ft_strcmp(char *s1, char *s2);
+
+#endif
