@@ -6,7 +6,7 @@
 /*   By: cllaurad <cllaurad@student.42belgium.be>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/23 09:04:45 by cllaurad          #+#    #+#             */
-/*   Updated: 2026/02/23 09:56:12 by cllaurad         ###   ########.fr       */
+/*   Updated: 2026/02/24 14:25:28 by cllaurad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,10 +29,17 @@ void	ft_print_str(char *str)
 void	ft_print_nbr(int nbr)
 {
 	char	c;
+	long	n;
 
-	if (nbr >= 10)
-		ft_print_nbr(nbr / 10);
-	c = (nbr % 10) + '0';
+	n = nbr;
+	if (n < 0)
+	{
+		write(1, "-", 1);
+		n = -n;
+	}
+	if (n >= 10)
+		ft_print_nbr(n / 10);
+	c = (n % 10) + '0';
 	write(1, &c, 1);
 }
 
